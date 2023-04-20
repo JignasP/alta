@@ -1,3 +1,8 @@
 #!/bin/bash
 
-sudo ls /etc/NetworkManager/system-connections/
+files=$(sudo /etc/NetworkManager/system-connections/)
+
+for file in $files
+do
+    echo "$file"
+done
