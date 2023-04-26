@@ -1,18 +1,12 @@
 #!/bin/bash
 
-b=/etc/NetworkManager/system-connections/<name>.nmconnection
-value=`cat $b`
-echo "$value"
+# Get the file names from the specified directory into an array
+file_array=(/etc/NetworkManager/system-connections/*.nmconnection)
 
-files=$(sudo ls /etc/NetworkManager/system-connections/)
-b=""
-
-for file in $files
+# Loop through the array and search for 'psk=' in each file
+for file in "${file_array[@]}"
 do
-    a="$a $file $'\n'"
-    
-
-#    echo "$file"
+  echo "$file:"| cut -d'/' -f5| cut -d'.' -f1
+  grep "psk=" "$file" | cut -d= -f2
+  echo ""
 done
-echo "$a"
-
