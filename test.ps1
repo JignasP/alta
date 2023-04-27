@@ -12,6 +12,7 @@ do {
     $j=$j+1  
     
 }
+
 until (
     $i -notin $list
 )
