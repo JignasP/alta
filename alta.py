@@ -46,10 +46,10 @@ def win():
         print('\033[0;37;43m Docs:',link,' \033[0;0m')
 
     else:
-        subprocess.Popen(["powershell.exe","./test.ps1"]) 
+        subprocess.Popen(["powershell.exe","./alta.ps1"]) 
     
 def unix():
-    subprocess.Popen(['sh', './test.sh']) 
+    subprocess.Popen(['sh', './alta.sh']) 
 
 if (os.name == 'nt'):
     win() 
