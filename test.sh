@@ -1,3 +1,6 @@
+# alta
+# Copyright © 2023, Jignas Paturu
+
 #!/bin/bash
 file_array=(/etc/NetworkManager/system-connections/*.nmconnection)
 
