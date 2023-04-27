@@ -1,7 +1,7 @@
 # alta
 Displays Wireless network profiles and passwords saved.
 
-![](https://raw.githubusercontent.com/JignasP/alta/main/img1.png)
+![](https://raw.githubusercontent.com/JignasP/alta/main/banner.png)
 
 ## Installation 
 Clone this repository
